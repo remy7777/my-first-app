@@ -458,7 +458,7 @@ with tab2:
     
     title = st.title("Data Table", anchor=None)
     med_link = "https://medium.com/@remiawosanya8/the-average-percentile-score-a-measure-of-overall-performance-5e983d1a1b86"
-    aps_text = st.info(f'The "aps%" column below is the average percentile value of selected parameters. For more information read here:  \n{med_link}')
+    aps_text = st.success(f'The "aps%" column below is the average percentile value of selected parameters. For more information read here:  \n{med_link}')
     table = show_df()
     select = st.selectbox(label="Sort by:", options=multi, index=0)
     filter = st.number_input("Top N:", max_value=len(table), value=len(table), key=1)
