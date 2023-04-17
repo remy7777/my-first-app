@@ -388,9 +388,9 @@ with tab1:
                 color="black", fontsize=11, va="center", fontdict=font
             ),                             
             kwargs_values=dict(
-                color="#E3CF57", fontsize=7, zorder=3, fontdict=font,
+                color="#2C5C1E", fontsize=7, zorder=3, fontdict=font,
                 bbox=dict(
-                    edgecolor="#E3CF57", facecolor="none",
+                    edgecolor="#2C5C1E", facecolor="none",
                     boxstyle="circle,pad=0.4", lw=1
                 )
             )                               
