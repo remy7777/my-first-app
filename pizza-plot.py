@@ -315,7 +315,7 @@ def sentence_transformer(p):
 
 with tab1:
     # title
-    title = st.title("Pizza Plots", anchor=None)
+    title = st.title("Pizza Plot", anchor=None)
 
     # sidebar
     note = st.sidebar.warning("The selected player must be playing in one of the big 5 European leagues and have played more than 700 minutes.")
