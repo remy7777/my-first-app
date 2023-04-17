@@ -20,7 +20,7 @@ page_config = st.set_page_config(page_title="Pizza Plots", page_icon=":soccer:",
                                         "Report a bug": "mailto:remiawosanya8@gmail.com"
                                             })
 
-tab1, tab2 = st.tabs(["Plots", "Table"])
+tab1, tab2 = st.tabs(["Plot", "Table"])
 
 def get_url():
     url = "https://fbref.com/en/comps/Big5/stats/players/Big-5-European-Leagues-Stats"
