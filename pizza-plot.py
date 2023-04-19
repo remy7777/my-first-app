@@ -276,11 +276,10 @@ def dataframes():
                         "g/sh":"goals/shots", "dist":"shot dist", "total_att":"pass att", "total_cmp_pct":"pass completion%",
                         "totdist":"pass dist", "prgdist":"prg pass dist", "short_att":"short pass att",
                         "short_cmp_pct":"short pass%", "long_att":"long pass att", "long_cmp_pct":"long pass%",
-                        "kp":"key passes", "1/3":"final 1/3 pass", "ppa":"pass penalty area", "sca":"shot creating act",
-                        "sca90":"shot creating act/90", "gca":"goal creating act", "gca/90":"goal creating act/90",
-                        "total_tkl":"total tkl", "tklw":"tkl won", "def 3rd":"tkl def 3rd", "mid 3rd":"tkl mid 3rd",
-                        "att 3rd":"tkl att 3rd", "tkl_att":"tkl att", "lost":"tkl lost", "shots_blocked":"shots blk",
-                        "pass_blocked":"pass blk", "def 3rd.1":"touch def 3rd", "mid 3rd.1":"touch mid 3rd",
+                        "kp":"key passes", "1/3":"final 1/3 pass", "ppa":"pass penalty area", "sca":"shot creating act", 
+                        "gca":"goal creating act", "total_tkl":"total tkl", "tklw":"tkl won", "def 3rd":"tkl def 3rd", 
+                        "mid 3rd":"tkl mid 3rd", "att 3rd":"tkl att 3rd", "tkl_att":"tkl att", "lost":"tkl lost",
+                        "shots_blocked":"shots blk", "pass_blocked":"pass blk", "def 3rd.1":"touch def 3rd", "mid 3rd.1":"touch mid 3rd",
                         "att 3rd.1":"touch att 3rd", "att pen":"touch att pen", "att":"takeon att", "succ%":"takeon%",
                         "1/3.1":"carries final 1/3", "cpa":"carries penalty area", "mis":"miscontrol", "dis":"disposs"}, inplace=True)
 
