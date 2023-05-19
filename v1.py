@@ -463,7 +463,7 @@ with tab2:
     med_link = "https://medium.com/@remiawosanya8/the-average-percentile-score-a-measure-of-overall-performance-5e983d1a1b86"
     aps_text = st.success(f'Similar players are selected on the basis of the Average Percentile Score (aps%) of selected parameters. For more information read here:  \n{med_link}')
     table = show_df()
-    select = st.selectbox(label="Sort by:", options=multi, index=0)
+    # select = st.selectbox(label="Sort by:", options=multi, index=0)
     filter = st.number_input("Top N:", max_value=len(table), value=len(table), key=1)
     table = table.sort_values(select, ascending=False).reset_index(drop=True, inplace=False).head(filter)
     show_table = st.write(table)
