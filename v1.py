@@ -449,10 +449,10 @@ with tab2:
         df["aps%"] = df1["aps%"]
 
         p = df.loc[df["player"] == input]
-        aps = float(p["aps"])
+        aps = float(p["aps%"])
         lower = aps - 3
         upper = aps + 3
-        similar = df.loc[(df["aps"] > lower) & (df["aps"] < upper)].sort_values("aps", ascending=False)
+        similar = df.loc[(df["aps%"] > lower) & (df["aps%"] < upper)].sort_values("aps%", ascending=False)
         new = similar[["player", "pos", "squad", "comp", "min", "aps%"]]
         df = df[params]
         new[params] = df
