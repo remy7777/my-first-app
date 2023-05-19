@@ -465,7 +465,7 @@ with tab2:
     table = show_df()
     # select = st.selectbox(label="Sort by:", options=multi, index=0)
     filter = st.number_input("Top N:", max_value=len(table), value=len(table), key=1)
-    table = table.sort_values(select, ascending=False).reset_index(drop=True, inplace=False).head(filter)
+    table = table.sort_values("aps%", ascending=False).reset_index(drop=True, inplace=False).head(filter)
     show_table = st.write(table)
     url = "https://fbref.com/"
     link = st.write(f"Data can be found at: {url}")
