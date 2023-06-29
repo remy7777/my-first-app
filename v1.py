@@ -246,12 +246,12 @@ def dataframes():
     def_df = player_def_stats()
     poss_df = player_poss_stats()
 
-    summary = summ_df[summ]
-    shooting = shoot_df[shoot]
-    pas = png_df[passing]
-    gca_ = gca_df[gca]
-    def_ = def_df[defense]
-    poss = poss_df[possession]
+    summary = summ_df[summ].reset_index(drop=True)
+    shooting = shoot_df[shoot].reset_index(drop=True)
+    pas = png_df[passing].reset_index(drop=True)
+    gca_ = gca_df[gca].reset_index(drop=True)
+    def_ = def_df[defense].reset_index(drop=True)
+    poss = poss_df[possession].reset_index(drop=True)
 
     df = pd.concat([summary, shooting, pas, gca_, def_, poss], axis=1)
     df["player"] = df["player"].astype("str")
