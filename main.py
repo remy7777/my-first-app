@@ -73,7 +73,7 @@ with tab2:
 
     # Display APS explanation
     st.success(f"Similar players are selected based on the Average Percentile Score (APS) of selected parameters. "
-               f"The APS differential is the number of percentage points above and below the selected player's APS")
+               f"The APS differential is the number of percentage points +/- the selected player's APS")
     
     # Similar players table
     dff = df.loc[(df["POS"] == position_select) & (df["MIN"] > 700)]
