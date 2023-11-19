@@ -107,7 +107,7 @@ gca_cols = ["sca", "sca_takeons", "gca", "gca_takeons"]
 def_cols = ["total_tkl", "tklw", "def 3rd", "mid 3rd", "att 3rd", "tkl_att", "tkl%", "blocks", "int", "clr", "err"]
 poss_cols = ["touches", "def 3rd", "mid 3rd", "att 3rd", "att pen", "att", "succ%", "tkld%", "1/3", "cpa", "mis", "dis"]
 
-@st.cache_data(ttl='1d')
+@st.cache_data()
 def joint_df():
     summary = player_summary_stats[summ_cols].reset_index(drop=True)
     shooting = player_shooting_stats[shoot_cols].reset_index(drop=True)
