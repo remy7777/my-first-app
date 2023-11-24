@@ -137,7 +137,7 @@ def joint_df():
     df.rename(columns={
         "gls":"goals", "ast":"assists", "prgc":"prg carries", "prgp":"prg passes",
         "sh":"shots", "sot":"shots on target", "g/sh":"goals/shot",
-        "dist":"shot distance", "total att":"pass attempts", "total_cmp_pct":"pass %",
+        "dist":"shot distance", "total_att":"pass attempts", "total_cmp_pct":"pass %",
         "prgdist":"prgpass dist", "short_att":"short passes", "short_cmp_pct":"short pass%", 
         "long_att":"long pass att", "long_cmp_pct":"long pass%", "kp":"key passes", 
         "1/3":"final 1/3 pass", "ppa":"penalty area pass", "sca":"shot creating act", "gca":"goal creating act",
