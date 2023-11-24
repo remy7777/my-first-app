@@ -81,7 +81,7 @@ with tab2:
     dff = ((dff[params].rank(axis=0, numeric_only=True, pct=True)) * 100).round(decimals=1)
     dff["APS %"] = dff.mean(numeric_only=True, axis=1).round(decimals=1)
     df["APS %"] = dff["APS %"]
-    player_aps = df.loc[df["PLAYER"] == input]
+    player_aps = dff.loc[dff["PLAYER"] == input]
     aps = float(player_aps["APS %"].iloc[0])
 
     # Adjust the APS bounds based on user input
