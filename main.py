@@ -78,9 +78,9 @@ with tab2:
     # Similar players table
     dff = df.loc[(df["POS"] == position_select) & (df["MIN"] > 700)]
     params = multi
-    dff = ((dff[params].rank(axis=0, numeric_only=True, pct=True)) * 100).round(decimals=1)
-    dff["APS %"] = dff.mean(numeric_only=True, axis=1).round(decimals=1)
-    df["APS %"] = dff["APS %"]
+    aps_df = ((dff[params].rank(axis=0, numeric_only=True, pct=True)) * 100).round(decimals=1)
+    aps_df["APS %"] = dff.mean(numeric_only=True, axis=1).round(decimals=1)
+    df["APS %"] = aps_df["APS %"]
     player_aps = dff.loc[dff["PLAYER"] == input]
     aps = float(player_aps["APS %"].iloc[0])
 
