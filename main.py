@@ -80,7 +80,7 @@ with tab2:
     params = multi
     aps_df = ((dff[params].rank(axis=0, numeric_only=True, pct=True)) * 100).round(decimals=1)
     aps_df["APS %"] = dff.mean(numeric_only=True, axis=1).round(decimals=1)
-    df["APS %"] = aps_df["APS %"]
+    dff["APS %"] = aps_df["APS %"]
     player_aps = dff.loc[dff["PLAYER"] == input]
     aps = float(player_aps["APS %"].iloc[0])
 
@@ -90,7 +90,7 @@ with tab2:
     aps_lower_bound = aps - aps_slider
 
     # Filter similar players based on adjusted APS bounds
-    similar = df.loc[(df["APS %"] >= aps_lower_bound) & (df["APS %"] <= aps_upper_bound)].sort_values("APS %", ascending=False)
+    similar = dff.loc[(dff["APS %"] >= aps_lower_bound) & (dff["APS %"] <= aps_upper_bound)].sort_values("APS %", ascending=False)
     similar = similar[["PLAYER", "POS", "SQUAD", "COMP", "MIN", "APS %"] + params].sort_values("APS %", ascending=False)
 
     # Display the filtered DataFrame
